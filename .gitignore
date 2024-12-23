@@ -1,1 +1,14 @@
-. 
+# Virtuele omgeving
+venv/
+
+# Cachebestanden
+__pycache__/
+*.pyc
+
+# Gevoelige bestanden
+.env
+
+# Outputbestanden
+*.xlsx
+*.csv
+*.txt
