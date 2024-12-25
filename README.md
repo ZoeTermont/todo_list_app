@@ -1,7 +1,8 @@
 # To-Do Lijst CLI-applicatie
 
 ## Algemene Beschrijving
-Deze command-line applicatie is een eenvoudige to-do lijst waarmee gebruikers taken kunnen beheren, voltooide taken kunnen bekijken, en rapporten kunnen genereren. De applicatie gebruikt een SQLite-database voor gegevensopslag en biedt verschillende interacties via een menu in de terminal.
+Deze to-do lijst is een command-line applicatie waarmee gebruikers hun taken kunnen actieve- en voltooide taken kunnen bekijken en exporteren. Deze functionaliteiten zijn beschikbaar door middel van een menu in de terminal.
+De to-do lijst gebruikt een SQLite-database 
 
 ## Functionaliteiten
 - **Taken toevoegen**: Voeg een nieuwe taak toe met een titel, beschrijving en vervaldatum.
@@ -19,36 +20,26 @@ Deze command-line applicatie is een eenvoudige to-do lijst waarmee gebruikers ta
 ## Installatie en Gebruik
 
 ### Stap 1: Clone de Repository
-Clone de GitHub-repository naar je lokale machine:
-```bash
+Clone de GitHub-repository:
+```
 git clone https://github.com/ZoeTermont/todo_list_app.git
 cd todo_list_app
 ```
 
 ### Stap 2: Maak een Virtuele Omgeving
-Maak en activeer een virtuele omgeving:
-
-**Windows**:
-```bash
+```
 python -m venv .venv
 .venv\Scripts\activate
 ```
 
-**Unix (Linux/MacOS)**:
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
-
 ### Stap 3: Installeer Vereiste Pakketten
 Installeer de pakketten die in `requirements.txt` staan:
-```bash
+```
 pip install -r requirements.txt
 ```
 
 ### Stap 4: Start de Applicatie
-Navigeer naar de `src`-map en start de applicatie:
-```bash
+```
 cd src
 python main.py
 ```
@@ -61,11 +52,11 @@ python main.py
   ```
 
 ## Exportfunctionaliteiten
-- **CSV**: Taken kunnen worden geëxporteerd naar een CSV-bestand via het exportmenu.
-- **Excel**: Taken kunnen worden geëxporteerd naar een Excel-bestand via het exportmenu.
+- **CSV**: De taken kunnen worden geëxporteerd naar een CSV-bestand via het exportmenu.
+- **Excel**: De taken kunnen worden geëxporteerd naar een Excel-bestand via het exportmenu.
 
 ## Projectstructuur
-De mappen en bestanden zijn georganiseerd als volgt:
+De bestandsstructuur ziet eruit alsvolgt:
 ```
 todo_list_app/
 ├── Config/
@@ -85,11 +76,11 @@ todo_list_app/
 
 ## Menu-opties
 ### Hoofdmenu:
-1. **Add Task**: Voeg een nieuwe taak toe.
+1. **Add Task**: Voegt een nieuwe taak toe.
 2. **Show Tasks**: Bekijk alle actieve taken.
 3. **Mark Task as Complete**: Markeer een taak als voltooid.
-4. **Completed Tasks Menu**: Bekijk voltooide taken, herstel taken, of bekijk statistieken.
-5. **Export Menu**: Genereer een CSV- of Excel-rapport.
+4. **Completed Tasks Menu**: Gaat naar het Completed Tasks Menu
+5. **Export Menu**: Gaat naar het Export Menu
 6. **Exit**: Sluit de applicatie.
 
 ### Completed Tasks Menu:
@@ -102,9 +93,6 @@ todo_list_app/
 1. **Export to CSV**: Exporteer alle taken naar een CSV-bestand.
 2. **Export to Excel**: Exporteer alle taken naar een Excel-bestand.
 3. **Exit Export Menu**: Keer terug naar het hoofdmenu.
-
-## GitHub Repository
-Bekijk de volledige repository hier: [todo_list_app](https://github.com/ZoeTermont/todo_list_app.git)
 
 ## Voorbeeldgebruik
 1. Start de applicatie en selecteer een menu-optie.
